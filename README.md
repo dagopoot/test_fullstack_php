@@ -33,9 +33,9 @@ CREATE TABLE Users (
     LastName varchar(255),
     Email varchar(100),
     Password varchar(255),
-    PRIMARY KEY (Email)
+    PRIMARY KEY (ID)
 );
-INSERT INTO Users (FirstName,LastName, Email, Password) VALUES ('Nathan', 'Smith', 'pcom@gmail.com', '3dd14afc9f2da6c03c4f6599553a4597'); 
+INSERT INTO Users (FirstName,LastName, Email, Password) VALUES ('Nathan', 'Smith', 'pcom@gmail.com', '3dd14afc9f2da6c03c4f6599553a4597');
 ```
 > **Nota: ** Estas sentencias las puede encontrar en el archivo **query.sql** de la carpeta **bd**
 
