@@ -39,7 +39,10 @@ INSERT INTO Users (FirstName,LastName, Email, Password) VALUES ('Nathan', 'Smith
 ```
 > **Nota: ** Estas sentencias las puede encontrar en el archivo **query.sql** de la carpeta **bd**
 
-- Repositorio: Debe contar con una cuenta en **bitbucket** para poder bifurcar (**fork**) el repositorio
+- Repositorio: 
+    - Debe contar con una cuenta en **bitbucket** para poder bifurcar (**fork**) el repositorio
+    - Realice el examen práctico  sobre la copia que realizó
+    - Al finalizar la prueba, enviar el link de su repositorio al siguiente correo: **luis.castro@propiedades.com**
 
 Especificaciones:
 -------------
