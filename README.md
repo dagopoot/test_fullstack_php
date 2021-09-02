@@ -1,19 +1,28 @@
 # Examen Práctico: Software Engineer
 
-La inmobiliaria **Propiedades** requiere de una aplicación web para la administración de sus  construcciones con las siguientes consideraciones:
+La inmobiliaria **OKOL** requiere de una aplicación web para la administración de sus inmuebles con las siguientes consideraciones:
+
 
 -  Permitir el registro y  autenticación de usuarios 
-- El **CRUD**  de las construcciones
-    - Puedes utilizar un framework de tu preferencia con arquitectura **MVC** 
-    - El formulario  de  registro  para las construcciones debe contar con las siguientes restricciones:
-        - Nombre de la construcción: validar solo el uso de textos
-        - Clave de la construcción: respetar el siguiente formato **PCOM-XXX/##**
-        - Galeria de imagenes: deberá consumir el **API de Foursquare** (en php) para obtener 5 fotos de localidades cercanas a la ubicación de  la construcción y almacenarlas como parte de su la galería
-    - Datos de ubicación mínimos requeridos: Delegación, Colonia, calle
+-  El sistea debera permitir el creacion, lectura, borrado y edicion de inmuebles 
+-  La creacion de inmuebles debe considerar los siguientes criterios: 
+    - El formulario  de  registro  para los inmuebles debe contar con las siguientes restricciones:
+        - Nombre del inmueble: validar solo el uso de textos
+        - Clave del inmueble: respetar el siguiente formato **PCOM-XXX/##**
+        - Galeria de imagenes: deberá consumir el **API de Instagram** para obtener 5 fotos de localidades cercanas a la ubicación del inmueble y almacenarlas en base de datos como parte de su la galería del inmueble
+        - Descripcion, tipo de transaccion (venta / renta), tipo de inmueble (casa, departamento, terreno, etc) y el precio del inmueble
+    - Datos de ubicación mínimos requeridos: Estado, Delegación, Colonia, calle y numero
     - Datos de geoposicionamiento: latitud y longitud
-    - Características: Se puede agregar N características de forma dinámica
-- Crea un mapa con el **API de google maps** donde se visualicen los pins de las construcciones registradas
-    - Al   seleccionar   cualquier   pin   del   mapa; debe mostrar el nombre de la construcción y  desplegar   una galería responsive de sus fotos almacenadas
+    - Características: Se puede agregar N características al inmueble (Ejemplo: cisterna, area de lavado, seguridad privada, etc)
+- El sistema debera permitir la edicion de todos los campos antes mencionados a excepcion de la clave del inmueble
+    - Esta funcionalidad solo esta petmitida para usuarios logeados
+- Debera existir una seccion donde se listaran los inmuebles registrados como se muestra en la siguiente imagen
+    - El listado se podra ver para todo tipo de usuario
+- Al dar click en un inmueble del listado, se debera abrir la ficha tecnica del inmueble como se miestra en la siguiente imagen
+- Nota: el diseño se debe apegar a las imagenes proporcionadas
+-Debera existir una seccion donde se muetre un mapa con el **API de google maps** donde se visualicen los pins de los inmuebles registrados
+    - La posicion sel pin para cada inmueble en el mapa corresponde a su latutud y longitud registrada
+    - Al   seleccionar   cualquier   pin   del   mapa; debe mostrar el nombre del inmueble y  desplegar   una galería responsive de sus fotos almacenadas
     - Al terminar de cargar la galeria; agregar un link que permita mostrar los detalles de construction (Nombre, Clave, Caracteristicas, etc.)
 
 ----------
