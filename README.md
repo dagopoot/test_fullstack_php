@@ -30,7 +30,9 @@ La inmobiliaria **OKOL** requiere de una aplicación web para la administración
 
 ![alt text](https://propiedadescom.s3.amazonaws.com/examen/examen2.png)
 
-- Nota: el diseño se debe apegar a las imagenes proporcionadas
+- Notas: 
+    - El diseño se debe apegar a las imagenes proporcionadas
+    - La aplicación debera ser responsiva
 ----------
 
 
