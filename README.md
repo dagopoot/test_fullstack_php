@@ -43,7 +43,7 @@ Requerimientos:
 - Repositorio: 
     - Debe contar con una cuenta en **bitbucket** para poder bifurcar (**fork**) el repositorio
     - Realice el examen práctico  sobre la copia que realizó
-    - Al finalizar la prueba, enviar el link de su repositorio al siguiente correo: **luis.castro@propiedades.com** y  **daniel.nava@propiedades.com**
+    - Al finalizar la prueba, enviar el link de su repositorio al siguiente correo: **luis.castro@propiedades.com**
 
 Especificaciones:
 -------------
