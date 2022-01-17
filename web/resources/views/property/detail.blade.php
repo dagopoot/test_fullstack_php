@@ -3,11 +3,15 @@
 @section('content')
 <div class="container">
     @if ($property->galery->count() > 0)
-    <div id="propertyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-bottom: 10rem;">
+    <div id="propertyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-bottom: 11rem;">
         <div class="carousel-inner">
             @for ($i = 0; $i < $property->galery->count(); $i++)
                 <div class="carousel-item @if($i == 0) active @endif">
+                    @if (preg_match( '/^http/', $property->galery[$i]->url ))
                     <img src="{{ $property->galery[$i]->url }}" class="d-block w-100">
+                    @else
+                    <img src="{{url('storage/' . $property->galery[$i]->url)}}" class="d-block w-100">
+                    @endif
                     <div class="carousel-caption d-none d-md-block" style="text-align: left;">
                         <p class="fs-3">{{ $property->property_type }}, {{ $property->operation }}</p>
                         <p class="fs-1">{{ $property->street }}, {{ $property->property_number }}</p>
@@ -28,7 +32,11 @@
         <div class="carousel-indicators" style="margin-bottom: -20px;">
             @for ($i = 0; $i < $property->galery->count(); $i++)
                 <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="{{ $i }}" class="@if($i == 0) active @endif" aria-current="true" aria-label="Slide {{ $i }}" style="width: 200px;">
-                    <img class="d-block w-100" src="{{ $property->galery[$i]->url }}" class="img-fluid" />
+                    @if (preg_match( '/^http/', $property->galery[$i]->url ))
+                    <img src="{{ $property->galery[$i]->url }}" class="d-block w-100 img-fluid">
+                    @else
+                    <img src="{{url('storage/' . $property->galery[$i]->url)}}" class="d-block w-100 img-fluid">
+                    @endif
                 </button>
                 @endfor
         </div>
