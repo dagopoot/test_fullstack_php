@@ -15,9 +15,7 @@ use App\Http\Controllers\PropertySearchController;
 |
 */
 
-Route::get('/', [PropertySearchController::class, 'home'])->name('home');
+Route::get('/', [PropertySearchController::class, 'list'])->name('property.list');
 Route::get('/property/{property:id}/detail', [PropertySearchController::class, 'detail'])->name('property.detail');
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

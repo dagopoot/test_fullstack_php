@@ -16,9 +16,11 @@
         
         <div class="card-body">
             <div class="d-flex justify-content-around">
-                <a href="" class="btn btn-link fs-1"><i class="far fa-eye"></i></a>
+                <a href="{{ route('property.detail', $property->id) }}" class="btn btn-link fs-1"><i class="far fa-eye"></i></a>
+                @auth
                 <a href="#" class="btn btn-link fs-1"><i class="fas fa-pen"></i></a>
                 <a href="#" class="btn btn-link fs-1"><i class="far fa-trash-alt"></i></a>
+                @endauth
             </div>
         </div>
     </div>

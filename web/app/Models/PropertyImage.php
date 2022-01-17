@@ -9,6 +9,12 @@ class PropertyImage extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'property_id',
+        'url',
+        'order'
+    ];
+
     public function property()
     {
         return $this->belongsTo(Property::class);
