@@ -33,7 +33,7 @@ configure los siguientes valores en el archivo de variables de ambiente para el 
     DB_USERNAME=propiedades_user
     DB_PASSWORD=r210U8Zv
 
-## Respaldo de la estructura de la base de datos
+## Respaldo de la estructura de la base de datos
 
 En la raiz del proyecto en la carpera 'bd' puede encontrar un archivo con la estructura de la base de datos.
 
@@ -65,8 +65,6 @@ Colóquese dentro de la carpeta 'web' e instale las dependencias
 
     npm run dev
 
-    php artisan migrate
-
 Configure la conexión a la base de datos en el archivo .env
 
     DB_CONNECTION=mysql
@@ -79,6 +77,14 @@ Configure la conexión a la base de datos en el archivo .env
 Configure un valor para la api key de google maps
 
     GOOGLE_API_KEY=#############
+
+Corra las migraciones
+
+    php artisan migrate
+
+Cree los links simbolicos
+
+    storage:link
 
 Inicie el servidor de pruebas
 
